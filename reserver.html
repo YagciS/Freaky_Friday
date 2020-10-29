@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freaky Friday</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="overlay"></div>
+        <div class="meny">
+            <ul>
+                <li class="knapper"><a href="index.html">Hjem</a></li>
+                <li class="knapper"><a href="reserver.html">Reserver et bord</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <h1>Reservasjon</h1>
+            <form action="info.html" method="GET">
+                <div class="form__item">
+                    <div>
+                        <label for="navn" class="form__label">Navn</label>
+                        <input type="text" class="form__input" name="navn" id="navn" required>
+                    </div>
+                    <div>
+                        <label for="mail" class="form__label">E-mail</label>
+                        <input type="email" class="form__input" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="dato" class="form__label">Dato</label>
+                        <input type="date" class="form__input" name="dato" id="dato" min="2020-01-01" max="2022-01-01"
+                            required>
+
+                    </div>
+                    <div>
+                        <label for="antallPers" class="form__label">Antall personer</label>
+                        <input type="number" class="form__input" name="antallPers" id="antallPers" min="1" max="8"
+                            step="1">
+                    </div>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
